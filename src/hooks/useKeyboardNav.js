@@ -32,6 +32,31 @@ export function useKeyboardNav({ totalSlides, onReveal }) {
   }, [totalSlides])
 
   useEffect(() => {
+    let touchStartX = null
+
+    const handleTouchStart = (e) => {
+      touchStartX = e.touches[0].clientX
+    }
+
+    const handleTouchEnd = (e) => {
+      if (touchStartX === null) return
+      const delta = touchStartX - e.changedTouches[0].clientX
+      if (Math.abs(delta) > 50) {
+        delta > 0 ? goNext() : goPrev()
+      }
+      touchStartX = null
+    }
+
+    window.addEventListener('touchstart', handleTouchStart, { passive: true })
+    window.addEventListener('touchend', handleTouchEnd, { passive: true })
+
+    return () => {
+      window.removeEventListener('touchstart', handleTouchStart)
+      window.removeEventListener('touchend', handleTouchEnd)
+    }
+  }, [goNext, goPrev])
+
+  useEffect(() => {
     const handleKeyDown = (e) => {
       switch (e.code) {
         case 'ArrowRight':
