@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 
 const container = {
   animate: { transition: { staggerChildren: 0.2 } },
@@ -22,7 +22,7 @@ const subtitleVariant = {
   },
 }
 
-export default function SlideTitle() {
+export default function SlideTitle({ revealed }) {
   return (
     <div className="w-full h-full flex items-center justify-center px-8">
       <motion.div
@@ -43,26 +43,35 @@ export default function SlideTitle() {
           I Catch Bad Guys<br />For A Living
         </motion.h1>
 
-        <motion.div variants={subtitleVariant} className="space-y-3">
-          <p
-            className="font-mono uppercase tracking-widest"
-            style={{
-              fontSize: 'clamp(0.65rem, 1.4vw, 1rem)',
-              color: 'rgba(240,240,240,0.7)',
-            }}
-          >
-            Tyler Cartwright
-          </p>
-          <p
-            className="font-mono uppercase tracking-widest"
-            style={{
-              fontSize: 'clamp(0.55rem, 1.2vw, 0.85rem)',
-              color: 'rgba(0, 240, 255, 0.6)',
-            }}
-          >
-            Machine Learning Engineer · Lloyds Banking Group
-          </p>
-        </motion.div>
+        <AnimatePresence>
+          {revealed && (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, ease: 'easeOut' }}
+              className="space-y-3"
+            >
+              <p
+                className="font-mono uppercase tracking-widest"
+                style={{
+                  fontSize: 'clamp(0.65rem, 1.4vw, 1rem)',
+                  color: 'rgba(240,240,240,0.7)',
+                }}
+              >
+                Tyler Cartwright
+              </p>
+              <p
+                className="font-mono uppercase tracking-widest"
+                style={{
+                  fontSize: 'clamp(0.55rem, 1.2vw, 0.85rem)',
+                  color: 'rgba(0, 240, 255, 0.6)',
+                }}
+              >
+                Machine Learning Engineer · Lloyds Banking Group
+              </p>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </motion.div>
     </div>
   )

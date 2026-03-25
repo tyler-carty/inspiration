@@ -1,4 +1,4 @@
-import { useRef, useEffect } from 'react'
+import { useRef, useEffect, useCallback } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useKeyboardNav } from '../hooks/useKeyboardNav'
 import { useFraudReveal } from '../hooks/useFraudReveal'
@@ -30,9 +30,18 @@ export default function SlideEngine() {
   const prevSlideRef = useRef(0)
   const directionRef = useRef(1)
 
+  const interceptNext = useCallback(() => {
+    if (prevSlideRef.current === 0 && slideConfig[0].hasReveal && !revealed) {
+      reveal()
+      return true
+    }
+    return false
+  }, [revealed, reveal])
+
   const { currentSlide, goNext, goPrev } = useKeyboardNav({
     totalSlides: slideConfig.length,
     onReveal: reveal,
+    interceptNext,
   })
 
   // Track direction and reset fraud reveal on slide change

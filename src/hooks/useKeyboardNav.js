@@ -1,10 +1,13 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
 
-export function useKeyboardNav({ totalSlides, onReveal }) {
+export function useKeyboardNav({ totalSlides, onReveal, interceptNext }) {
   const [currentSlide, setCurrentSlide] = useState(0)
   const directionRef = useRef(1)
+  const interceptNextRef = useRef(interceptNext)
+  useEffect(() => { interceptNextRef.current = interceptNext }, [interceptNext])
 
   const goNext = useCallback(() => {
+    if (interceptNextRef.current?.()) return
     setCurrentSlide((s) => {
       if (s < totalSlides - 1) {
         directionRef.current = 1

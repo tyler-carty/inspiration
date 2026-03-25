@@ -1,4 +1,5 @@
 import SlideTitle from './SlideTitle'
+import SlideStudentPhoto from './SlideStudentPhoto'
 import SlideHowDidIGetHere from './SlideHowDidIGetHere'
 import SlideLegoStarWars from './SlideLegoStarWars'
 import SlidePilot from './SlidePilot'
@@ -17,8 +18,9 @@ import SlideMotivational from './SlideMotivational'
 import SlideQuestions from './SlideQuestions'
 
 export const slideConfig = [
-  { component: SlideTitle,           hasReveal: false },
+  { component: SlideTitle,           hasReveal: true  },
   { component: SlideHowDidIGetHere,  hasReveal: false },
+  { component: SlideStudentPhoto,    hasReveal: false },
   { component: SlidePilot,           hasReveal: false }, // dream first
   { component: SlideLegoStarWars,    hasReveal: false }, // then the inciting moment
   { component: SlideComputerScience, hasReveal: false },
