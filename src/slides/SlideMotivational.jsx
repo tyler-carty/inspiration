@@ -25,9 +25,9 @@ export default function SlideMotivational() {
       >
         <motion.h1
           variants={item}
-          className="font-pixel uppercase text-center leading-loose mb-16"
+          className="font-pixel uppercase text-center leading-loose mb-12"
           style={{
-            fontSize: 'clamp(0.8rem, 2vw, 1.8rem)',
+            fontSize: 'clamp(1rem, 2.5vw, 2.2rem)',
             color: '#f0f0f0',
             textShadow: '0 0 10px rgba(240,240,240,0.3)',
           }}

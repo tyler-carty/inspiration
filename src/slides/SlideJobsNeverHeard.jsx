@@ -8,14 +8,14 @@ const roles = [
     description: 'I built the pipes that move information around a bank',
   },
   {
+    icon: '🧠',
+    title: 'Machine Learning Engineer',
+    description: 'I make computers smart enough to protect millions of people\'s money — every single day',
+  },
+  {
     icon: '🔍',
     title: 'Data Scientist',
     description: 'I taught computers to spot patterns and catch bad guys',
-  },
-  {
-    icon: '🧠',
-    title: 'Machine Learning Engineer',
-    description: 'I teach computers to learn from mistakes — just like you do',
   },
 ]
 

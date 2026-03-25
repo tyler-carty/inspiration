@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion'
 
 const skills = [
-  { label: 'App Development', icon: '📱', verdict: '❌', color: '#ff2d78', highlight: false },
-  { label: '3D Graphics Engines', icon: '🎮', verdict: '🤔', color: '#ffbb00', highlight: false },
-  { label: 'Low-Level Programming', icon: '⚙️', verdict: '😵', color: '#ff2d78', highlight: false },
+  { label: 'Building Apps', icon: '📱', verdict: '', color: 'rgba(240,240,240,0.3)', highlight: false },
+  { label: 'Making Game Worlds', icon: '🎮', verdict: '', color: 'rgba(240,240,240,0.3)', highlight: false },
+  { label: 'Programming Computer Chips', icon: '⚙️', verdict: '', color: 'rgba(240,240,240,0.3)', highlight: false },
   { label: 'Machine Learning', icon: '🤖', verdict: '✅', color: '#39ff14', highlight: true },
 ]
 
@@ -37,7 +37,7 @@ export default function SkillTree() {
               ? 'rgba(57, 255, 20, 0.06)'
               : 'rgba(19, 25, 41, 0.85)',
             border: `2px solid ${skill.color}`,
-            borderRadius: '10px',
+            borderRadius: '12px',
             padding: 'clamp(0.8rem, 1.5vw, 1.2rem) clamp(1rem, 2vw, 1.6rem)',
             boxShadow: skill.highlight
               ? '0 0 16px rgba(57,255,20,0.5), 0 0 40px rgba(57,255,20,0.2)'
@@ -48,7 +48,7 @@ export default function SkillTree() {
           <div
             className="font-pixel uppercase"
             style={{
-              fontSize: 'clamp(0.45rem, 0.95vw, 0.7rem)',
+              fontSize: 'clamp(0.65rem, 1.3vw, 1rem)',
               color: skill.color,
               textShadow: `0 0 8px ${skill.color}`,
               lineHeight: 1.7,

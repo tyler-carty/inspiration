@@ -35,8 +35,8 @@ export default function SlideSpotTheFraud() {
 
         <motion.p
           variants={item}
-          className="font-mono mb-4"
-          style={{ fontSize: 'clamp(0.6rem, 1.3vw, 0.9rem)', color: 'rgba(240,240,240,0.6)', lineHeight: 1.8 }}
+          className="font-mono mb-8"
+          style={{ fontSize: 'clamp(0.6rem, 1.3vw, 0.9rem)', color: 'rgba(240,240,240,0.6)', lineHeight: 2 }}
         >
           I&apos;m going to show you 3 transactions.
           <br />
@@ -45,8 +45,8 @@ export default function SlideSpotTheFraud() {
 
         <motion.p
           variants={item}
-          className="font-mono mb-6"
-          style={{ fontSize: 'clamp(0.55rem, 1.1vw, 0.8rem)', color: 'rgba(240,240,240,0.4)' }}
+          className="font-mono mb-8"
+          style={{ fontSize: 'clamp(0.65rem, 1.3vw, 0.95rem)', color: 'rgba(240,240,240,0.55)', lineHeight: 1.9 }}
         >
           This is what I do every day — but I teach a computer to do it.
         </motion.p>
@@ -55,9 +55,10 @@ export default function SlideSpotTheFraud() {
           variants={item}
           className="font-pixel uppercase"
           style={{
-            fontSize: 'clamp(0.5rem, 1vw, 0.7rem)',
+            fontSize: 'clamp(0.65rem, 1.3vw, 0.95rem)',
             color: '#39ff14',
             textShadow: '0 0 8px #39ff14',
+            marginTop: '1.5rem',
           }}
         >
           Hands up when you think you&apos;ve spotted it!

@@ -25,7 +25,7 @@ export default function RoleCard({ icon, title, description, delay = 0 }) {
       <h3
         className="font-pixel uppercase"
         style={{
-          fontSize: 'clamp(0.45rem, 0.9vw, 0.7rem)',
+          fontSize: 'clamp(0.65rem, 1.3vw, 1rem)',
           color: '#00f0ff',
           textShadow: '0 0 8px #00f0ff',
           lineHeight: 1.7,
@@ -36,7 +36,7 @@ export default function RoleCard({ icon, title, description, delay = 0 }) {
       <p
         className="font-mono"
         style={{
-          fontSize: 'clamp(0.55rem, 1.1vw, 0.8rem)',
+          fontSize: 'clamp(0.7rem, 1.3vw, 1rem)',
           color: 'rgba(240,240,240,0.6)',
           lineHeight: 1.7,
         }}

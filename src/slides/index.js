@@ -4,6 +4,7 @@ import SlideLegoStarWars from './SlideLegoStarWars'
 import SlidePilot from './SlidePilot'
 import SlideComputerScience from './SlideComputerScience'
 import SlideSoftwareDev from './SlideSoftwareDev'
+import SlideCleaningJob from './SlideCleaningJob'
 import SlideTriedEverything from './SlideTriedEverything'
 import SlideJobsNeverHeard from './SlideJobsNeverHeard'
 import SlideComputersDumb from './SlideComputersDumb'
@@ -18,18 +19,19 @@ import SlideQuestions from './SlideQuestions'
 export const slideConfig = [
   { component: SlideTitle,           hasReveal: false },
   { component: SlideHowDidIGetHere,  hasReveal: false },
-  { component: SlideLegoStarWars,    hasReveal: false },
-  { component: SlidePilot,           hasReveal: false },
+  { component: SlidePilot,           hasReveal: false }, // dream first
+  { component: SlideLegoStarWars,    hasReveal: false }, // then the inciting moment
   { component: SlideComputerScience, hasReveal: false },
   { component: SlideSoftwareDev,     hasReveal: false },
   { component: SlideTriedEverything, hasReveal: false },
-  { component: SlideJobsNeverHeard,  hasReveal: false },
-  { component: SlideComputersDumb,   hasReveal: false },
+  { component: SlideComputersDumb,   hasReveal: false }, // concept before jobs
+  { component: SlideJobsNeverHeard,  hasReveal: false }, // jobs that exist because of it
   { component: SlideSpotTheFraud,    hasReveal: false },
   { component: SlideFraudRound1,     hasReveal: true  },
   { component: SlideFraudRound2,     hasReveal: true  },
   { component: SlideFraudRound3,     hasReveal: true  },
   { component: SlideYouDidMyJob,     hasReveal: false },
   { component: SlideMotivational,    hasReveal: false },
+  { component: SlideCleaningJob,     hasReveal: false },
   { component: SlideQuestions,       hasReveal: false },
 ]

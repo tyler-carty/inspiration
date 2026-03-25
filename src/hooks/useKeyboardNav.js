@@ -36,10 +36,12 @@ export function useKeyboardNav({ totalSlides, onReveal }) {
       switch (e.code) {
         case 'ArrowRight':
         case 'Space':
+        case 'PageDown':
           e.preventDefault()
           goNext()
           break
         case 'ArrowLeft':
+        case 'PageUp':
           e.preventDefault()
           goPrev()
           break

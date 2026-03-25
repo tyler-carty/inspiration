@@ -38,7 +38,7 @@ export default function TransactionCard({ merchant, amount, date, location, isFr
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        gap: '0.6rem',
+        gap: '0.8rem',
         textAlign: 'center',
         position: 'relative',
         overflow: 'hidden',
@@ -48,7 +48,7 @@ export default function TransactionCard({ merchant, amount, date, location, isFr
       <div
         className="font-pixel"
         style={{
-          fontSize: 'clamp(0.5rem, 1vw, 0.75rem)',
+          fontSize: 'clamp(0.6rem, 1vw, 0.85rem)',
           color: 'rgba(0,240,255,0.35)',
           marginBottom: '0.2rem',
         }}
@@ -60,7 +60,7 @@ export default function TransactionCard({ merchant, amount, date, location, isFr
       <div
         className="font-pixel uppercase"
         style={{
-          fontSize: 'clamp(0.5rem, 1vw, 0.75rem)',
+          fontSize: 'clamp(0.65rem, 1.3vw, 1rem)',
           color: '#f0f0f0',
           lineHeight: 1.8,
         }}
@@ -80,13 +80,19 @@ export default function TransactionCard({ merchant, amount, date, location, isFr
       <div
         className="font-mono"
         style={{
-          fontSize: 'clamp(0.5rem, 1vw, 0.7rem)',
-          color: 'rgba(240,240,240,0.5)',
-          lineHeight: 1.7,
+          fontSize: 'clamp(0.6rem, 1.1vw, 0.85rem)',
+          color: 'rgba(240,240,240,0.4)',
         }}
       >
         {date}
-        <br />
+      </div>
+      <div
+        className="font-mono"
+        style={{
+          fontSize: 'clamp(0.7rem, 1.4vw, 1.05rem)',
+          color: 'rgba(240,240,240,0.75)',
+        }}
+      >
         {location}
       </div>
 
@@ -103,9 +109,9 @@ export default function TransactionCard({ merchant, amount, date, location, isFr
               marginTop: '0.4rem',
               padding: '0.3em 0.7em',
               border: `2px solid ${badgeColor}`,
-              borderRadius: '6px',
+              borderRadius: '8px',
               color: badgeColor,
-              fontSize: 'clamp(0.5rem, 1vw, 0.75rem)',
+              fontSize: 'clamp(0.6rem, 1.2vw, 0.85rem)',
               textShadow: `0 0 8px ${badgeColor}`,
               boxShadow: `0 0 12px ${badgeColor}44`,
               background: `${badgeColor}11`,

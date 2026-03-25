@@ -42,7 +42,7 @@ export default function SlideSoftwareDev() {
                   textShadow: '0 0 10px #ff2d78, 0 0 30px #ff2d78',
                 }}
               >
-                But I hated making apps!
+                But I hated being told how to solve problems!
               </h2>
               <motion.p
                 initial={{ opacity: 0 }}
@@ -54,7 +54,7 @@ export default function SlideSoftwareDev() {
                   color: 'rgba(240,240,240,0.55)',
                 }}
               >
-                Designing buttons and screens was SO boring to me. I was stuck.
+                I didn&apos;t want a recipe to follow. I wanted to figure out my OWN way.
               </motion.p>
             </motion.div>
           )}

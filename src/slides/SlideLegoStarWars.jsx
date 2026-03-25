@@ -37,7 +37,7 @@ export default function SlideLegoStarWars() {
             background: 'linear-gradient(145deg, #1a1f35, #0d1120)',
             border: '2px solid #00f0ff',
             borderRadius: '12px',
-            padding: 'clamp(1.5rem, 3vw, 2.5rem) clamp(2rem, 4vw, 4rem)',
+            padding: 'clamp(2rem, 3.5vw, 3rem) clamp(2rem, 4vw, 4rem)',
             boxShadow: '0 0 20px rgba(0,240,255,0.25), 0 0 60px rgba(0,240,255,0.1), inset 0 0 20px rgba(0,240,255,0.04)',
             minWidth: 'clamp(280px, 40vw, 480px)',
           }}
@@ -57,7 +57,7 @@ export default function SlideLegoStarWars() {
             }}
           />
 
-          <div className="font-pixel uppercase text-center space-y-4">
+          <div className="font-pixel uppercase text-center space-y-8">
             <p
               style={{
                 fontSize: 'clamp(0.45rem, 1vw, 0.75rem)',
@@ -73,7 +73,7 @@ export default function SlideLegoStarWars() {
                 fontSize: 'clamp(0.7rem, 1.6vw, 1.3rem)',
                 color: '#f0f0f0',
                 textShadow: '0 0 10px rgba(240,240,240,0.3)',
-                lineHeight: 1.6,
+                lineHeight: 1.9,
               }}
             >
               Star Wars
@@ -103,10 +103,11 @@ export default function SlideLegoStarWars() {
 
         <motion.p
           variants={item}
-          className="font-mono mt-10"
+          className="font-mono"
           style={{
             fontSize: 'clamp(0.65rem, 1.4vw, 1rem)',
             color: 'rgba(240,240,240,0.55)',
+            marginTop: '1.5rem',
           }}
         >
           One game. That&apos;s all it took.

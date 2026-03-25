@@ -30,28 +30,28 @@ export const round2 = {
   title: 'Round 2',
   cards: [
     {
-      merchant: 'Smyths Toys',
-      amount: '£50.00',
-      date: 'Monday, 2:00pm',
-      location: 'Leeds',
-      isFraud: true,
-    },
-    {
-      merchant: 'Smyths Toys',
-      amount: '£50.00',
-      date: 'Monday, 2:00pm',
-      location: 'Leeds',
-      isFraud: true,
-    },
-    {
       merchant: 'Costa',
-      amount: '£8.00',
-      date: 'Monday, 3:30pm',
-      location: 'Leeds',
+      amount: '£4.20',
+      date: 'Monday, 10:15am',
+      location: 'Manchester',
       isFraud: false,
     },
+    {
+      merchant: 'Online Check',
+      amount: '£0.01',
+      date: 'Monday, 10:17am',
+      location: 'Online',
+      isFraud: true,
+    },
+    {
+      merchant: 'Electronics Store',
+      amount: '£899.00',
+      date: 'Monday, 10:18am',
+      location: 'Online',
+      isFraud: true,
+    },
   ],
-  explanation: 'Same transaction twice — someone copied the card!',
+  explanation: "Fraudsters test stolen cards with a tiny 1p payment first — then spend big straight away!",
 }
 
 export const round3 = {

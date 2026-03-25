@@ -47,8 +47,8 @@ export default function SlideComputersDumb() {
 
         <motion.p
           variants={item}
-          className="font-mono mb-4"
-          style={{ fontSize: 'clamp(0.65rem, 1.4vw, 1rem)', color: 'rgba(240,240,240,0.65)' }}
+          className="font-mono mb-10"
+          style={{ fontSize: 'clamp(0.65rem, 1.4vw, 1rem)', color: 'rgba(240,240,240,0.65)', lineHeight: 1.9 }}
         >
           They can&apos;t think. They just follow instructions...{' '}
           <span style={{ color: '#00f0ff' }}>VERY fast.</span>
@@ -57,7 +57,7 @@ export default function SlideComputersDumb() {
         <motion.p
           variants={item}
           className="font-mono"
-          style={{ fontSize: 'clamp(0.65rem, 1.4vw, 1rem)', color: '#39ff14', textShadow: '0 0 8px #39ff14' }}
+          style={{ fontSize: 'clamp(0.65rem, 1.4vw, 1rem)', color: '#39ff14', textShadow: '0 0 8px #39ff14', lineHeight: 1.9 }}
         >
           My job? Teach them to be clever.
         </motion.p>

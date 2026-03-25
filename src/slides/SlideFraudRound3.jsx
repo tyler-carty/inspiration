@@ -39,7 +39,7 @@ export default function SlideFraudRound3({ revealed }) {
             transition={{ delay: 0.6, duration: 0.4 }}
             className="font-mono text-center"
             style={{
-              fontSize: 'clamp(0.55rem, 1.2vw, 0.85rem)',
+              fontSize: 'clamp(0.75rem, 1.6vw, 1.2rem)',
               color: '#ff2d78',
               textShadow: '0 0 8px #ff2d78',
               maxWidth: '700px',
@@ -57,8 +57,8 @@ export default function SlideFraudRound3({ revealed }) {
           transition={{ delay: 0.5 }}
           className="font-pixel uppercase"
           style={{
-            fontSize: 'clamp(0.4rem, 0.8vw, 0.55rem)',
-            color: 'rgba(0,240,255,0.3)',
+            fontSize: 'clamp(0.65rem, 1.1vw, 0.85rem)',
+            color: 'rgba(0,240,255,0.5)',
           }}
         >
           Press Enter or R to reveal

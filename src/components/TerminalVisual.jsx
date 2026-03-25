@@ -42,7 +42,7 @@ export default function TerminalVisual() {
         <span style={{ width: 10, height: 10, borderRadius: '50%', background: '#39ff14', display: 'inline-block' }} />
         <span
           className="font-mono"
-          style={{ marginLeft: 'auto', fontSize: '0.6rem', color: 'rgba(57,255,20,0.4)' }}
+          style={{ marginLeft: 'auto', fontSize: 'clamp(0.5rem, 0.9vw, 0.65rem)', color: 'rgba(57,255,20,0.4)' }}
         >
           terminal
         </span>
@@ -53,7 +53,7 @@ export default function TerminalVisual() {
         variants={container}
         initial="initial"
         animate="animate"
-        style={{ padding: '1.2rem 1.5rem', minHeight: '120px' }}
+        style={{ padding: '1.2rem', minHeight: '120px' }}
       >
         {lines.map((line, i) => (
           <motion.div

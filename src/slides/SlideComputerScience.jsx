@@ -20,7 +20,7 @@ export default function SlideComputerScience() {
       >
         <motion.h1
           variants={item}
-          className="font-pixel uppercase leading-loose mb-4"
+          className="font-pixel uppercase leading-loose mb-8"
           style={{
             fontSize: 'clamp(0.9rem, 2.2vw, 2rem)',
             color: '#00f0ff',
@@ -32,10 +32,11 @@ export default function SlideComputerScience() {
 
         <motion.p
           variants={item}
-          className="font-mono mb-10"
+          className="font-mono"
           style={{
             fontSize: 'clamp(0.6rem, 1.3vw, 0.9rem)',
             color: 'rgba(240,240,240,0.55)',
+            marginBottom: '1.5rem',
           }}
         >
           Year 7. No idea what jobs existed. Just knew I loved it.

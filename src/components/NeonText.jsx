@@ -20,7 +20,7 @@ export default function NeonText({
       style={{
         color: hex,
         textShadow: `0 0 10px ${hex}, 0 0 30px ${hex}, 0 0 60px ${hex}44`,
-        lineHeight: 1.5,
+        lineHeight: 1.7,
         ...style,
       }}
     >

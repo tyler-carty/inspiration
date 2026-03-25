@@ -21,7 +21,7 @@ export default function SlideTriedEverything() {
             textShadow: '0 0 10px #00f0ff, 0 0 30px #00f0ff',
           }}
         >
-          So I tried everything
+          ...I tried everything
         </motion.h1>
 
         <div className="flex justify-center">
