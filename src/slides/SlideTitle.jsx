@@ -40,7 +40,7 @@ export default function SlideTitle({ revealed }) {
             textShadow: '0 0 10px #00f0ff, 0 0 30px #00f0ff, 0 0 80px rgba(0,240,255,0.4)',
           }}
         >
-          I Catch Bad Guys<br />For A Living
+          I Catch Criminals<br />For A Living
         </motion.h1>
 
         <AnimatePresence>
